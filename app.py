@@ -13,18 +13,25 @@ from scipy.stats import norm
 import time
 import requests
 import shutil
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 import threading
 import yfinance as yf
 import csv
 import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
+
+# ========== SELENIUM OPCIONAL (NÃO USA NO STREAMLIT CLOUD) ==========
+try:
+    from selenium import webdriver
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    from selenium.webdriver.common.keys import Keys
+    from selenium.webdriver.chrome.service import Service
+    from webdriver_manager.chrome import ChromeDriverManager
+    SELENIUM_DISPONIVEL = True
+except ImportError:
+    SELENIUM_DISPONIVEL = False
+    st.warning("⚠️ Selenium não disponível. Usando apenas API requests para downloads.")
 
 # ========== CONFIGURAÇÃO DA PÁGINA (ÚNICA VEZ) ==========
 st.set_page_config(
