@@ -1,0 +1,11 @@
+{
+    "usuarios": [
+        {
+            "email": "wlademir.wlca@gmail.com",
+            "cpf_hash": "fc1903d4b9fc876656e981596217f9ac954a11b8eb1ac285c26150c44f485108",
+            "nome": "Wlademir L C Araujo",
+            "ativo": true,
+            "data_cadastro": "2026-06-15"
+        }
+    ]
+}
