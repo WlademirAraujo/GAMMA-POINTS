@@ -13,6 +13,20 @@
             "nome": "Cliente Temp",
             "ativo": true,
             "data_cadastro": "2026-06-23"
+        },
+        {
+            "email": "gilbertoftb@yahoo.com.br",
+            "cpf_hash": "ce71fb56483732f3549eb30e61cbdcf03e4118ab4c76ce1af02735730f937e18",
+            "nome": "CLIENTE TPR",
+            "ativo": true,
+            "data_cadastro": "2026-06-24"
+        },
+        {
+            "email": "guilhermefg93@gmail.com",
+            "cpf_hash": "319e15d065c0ad514f19f87a66d2973e6aca1b452349f30a28af56a5a011d6fd",
+            "nome": "CLIENTE TPR",
+            "ativo": true,
+            "data_cadastro": "2026-06-24"
         }
     ]
 }
